@@ -22,7 +22,7 @@
     <Button
         android:id="@+id/btnSendMessageActivity"
         android:onClick="onClickSendMessageActivity"
-        android:layout_width="411dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/Send_a_message_to_another_activity"
         app:layout_constraintEnd_toEndOf="parent"
