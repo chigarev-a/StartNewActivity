@@ -7,30 +7,31 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editTextTextMessage"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:autofillHints="@string/enter_your_message"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="@string/enter_your_message"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="@string/enter_your_message" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnSendMessageActivity"
-        android:layout_width="0dp"
+        android:onClick="onClickSendMessageActivity"
+        android:layout_width="411dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:text="@string/Send_a_message_to_another_activity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMessage" />
 
     <Button
         android:id="@+id/btnSendMessage"
+        android:onClick="onClickSendMessage"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
